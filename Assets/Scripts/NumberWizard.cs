@@ -36,12 +36,7 @@ public class NumberWizard : MonoBehaviour
  
     void Guess()
     {
-        int currentGuess = guess;
         guess = Random.Range(min, max + 1);
-        while(currentGuess == guess)
-        {
-            guess = Random.Range(min, max + 1);
-        }
         //guess = (max + min) / 2;
         guessText.text = guess.ToString();
     }
